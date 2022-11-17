@@ -1,1 +1,1 @@
-# Data-Structures-and-Algorithms
+Daily Practice of Data Structures and Algorithms

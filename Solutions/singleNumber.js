@@ -16,7 +16,7 @@ var singleNumber = function (nums) {
     }
   }
   for (const key in hash) {
-    if (hash[key] == 1) {
+    if (hash[key] === 1) {
       return key;
     }
   }

@@ -18,7 +18,7 @@ const uniqueInOrder = function (iterable) {
       index++;
     }
   }
-  //returns the last value in array since it will be unique
+  //adds the last value in array since it will be unique
   hash[index] = iterable[iterable.length - 1];
   return Object.values(hash);
 };

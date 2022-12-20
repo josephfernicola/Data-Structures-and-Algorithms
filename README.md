@@ -1,1 +1,1 @@
-Daily practice of Data Structures and Algorithms
+Practice of Data Structures and Algorithms

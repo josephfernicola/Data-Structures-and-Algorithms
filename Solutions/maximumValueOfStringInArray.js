@@ -4,10 +4,10 @@
 // The length of the string, otherwise.
 // Given an array strs of alphanumeric strings, return the maximum value of any string in strs.
 
-var maximumValue = function(strs) {
+const maximumValue = function(strs) {
     let output = 0;
     for (let i = 0; i < strs.length; i++) {
-        if (parseInt(strs[i]) !== NaN) {
+        if (strs[i].match(/^[0-9]+$/) !== null) {
             output = Math.max(parseInt(strs[i]), output);
         }
         else {

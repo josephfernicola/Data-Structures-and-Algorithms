@@ -9,12 +9,7 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLastWord = function (s) {
-  let wordsArray = s.split(" ");
-  for (let i = 0; i < wordsArray.length; i++) {
-    while (wordsArray[i] === "") {
-      wordsArray.splice(i, 1);
-    }
-  }
-  return wordsArray.slice(-1)[0].length;
+ var lengthOfLastWord = function(s) {
+  s = s.split(" ").filter(word => word);
+  return s[s.length - 1].length;
 };

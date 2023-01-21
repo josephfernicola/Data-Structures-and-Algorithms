@@ -3,17 +3,17 @@
 // Substrings that occur multiple times are counted the number of times they occur.
 
 const countBinarySubstrings = function(s) {
-    let curr = 1;
-    let prev = 0;
-    let ans = 0;
+    let current = 1;
+    let previous = 0;
+    let answer = 0;
     for (let i = 1; i < s.length; i++)
         if (s[i] === s[i-1]) {
-            curr++;
+            current++;
         }
         else {
-        ans += Math.min(curr, prev);
-        prev = curr;
-        curr = 1;
+        answer += Math.min(current, previous);
+        previous = current;
+        current = 1;
         }
-    return ans + Math.min(curr, prev);
+    return answer + Math.min(current, previous);
 };

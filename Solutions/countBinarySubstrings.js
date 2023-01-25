@@ -19,6 +19,7 @@ const countBinarySubstrings = function(s) {
     return answer + Math.min(current, previous);
 };
 
-// "00011"
+// "00011" 2
 
-// "00110011"
+
+// "00110011" 6
